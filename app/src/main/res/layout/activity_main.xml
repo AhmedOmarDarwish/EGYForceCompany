@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/CompanyName"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/textcolor"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Net Caffe &amp; Computer Service"
+            android:textColor="@color/textcolor"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_marginTop="8dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/textcolor"
+            android:background="@color/Background2"
+            android:text="@string/About"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/location"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:src="@drawable/location"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Address"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:layout_width="@dimen/img_weight"
+                android:layout_height="@dimen/img_height"
+                android:layout_weight="1"
+                android:onClick="face"
+                android:src="@drawable/f"
+                android:scaleType="centerCrop"
+                android:background="@color/Background" />
+
+            <ImageButton
+                android:layout_width="@dimen/img_weight"
+                android:layout_height="@dimen/img_height"
+                android:layout_weight="1"
+                android:onClick="whatsApp"
+                android:src="@drawable/w"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:scaleType="centerCrop"
+                android:background="@color/Background"/>
+
+            <ImageButton
+                android:layout_width="@dimen/img_weight"
+                android:layout_height="@dimen/img_height"
+                android:layout_weight="1"
+                android:src="@drawable/call"
+                android:onClick="call"
+                android:background="@color/Background"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
